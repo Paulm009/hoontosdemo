@@ -9,31 +9,40 @@ export default function Linkprofesional() {
       <div className="w-full max-w-6xl px-6 md:px-12">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-          <div>
-            <h1 className="text-4xl font-bold">PAUL MARTINEZ</h1>
-            <p className="text-gray-600 text-lg">Backend Developer</p>
-          </div>
-          <div className="flex gap-3">
-            <button className="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-700">
-              View Résumé
-            </button>
-            <button className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">
-              Contact
-            </button>
-          </div>
+        <div className="relative">
+ <div className="relative w-full">
+  {/* Botones arriba a la derecha */}
+  <div className="absolute top-0 right-0 flex gap-3">
+    <button className="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-700">
+      View Résumé
+    </button>
+    <button className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">
+      Contact
+    </button>
+  </div>
+</div>
+
+</div>
+
         </div>
 
         {/* Top Section: Image + Traits */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
           {/* Profile Picture */}
-          <div className="flex justify-center md:justify-start">
-            <img
-              src="./src/assets/paul.png"
-              alt="Paul Martinez"
-              className="w-36 h-36 md:w-40 md:h-40 rounded-full border-4 border-gray-300"
-            />
-          </div>
+       <div className="flex justify-center md:justify-start items-center gap-8 mb-8">
+  <img
+    src="./src/assets/paul.png"
+    alt="Paul Martinez"
+    className="w-36 h-36 md:w-40 md:h-40 rounded-full border-4 border-gray-300"
+  />
+  
+  <div className="flex flex-col">
+    <h1 className="text-4xl font-bold">PAUL MARTINEZ</h1>
+    <p className="text-gray-600 text-lg">Backend Developer</p>
+  </div>
+</div>
 
+<br />
           {/* Traits */}
           <div className="md:col-span-3 space-y-6">
             {/* Dominant Traits */}

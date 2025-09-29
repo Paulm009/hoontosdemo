@@ -14,7 +14,7 @@ export default function NetworkingList() {
   return (
     <aside>
       <div className="rounded-lg border bg-white p-3 shadow-sm">
-        <h3 className="px-2 pb-2 text-sm font-semibold text-gray-500">Usuarios: Abiertos a networking</h3>
+       {/* Tu comentario va aquí  <h3 className="px-2 pb-2 text-sm font-semibold text-gray-500">Usuarios: Abiertos a networking</h3>
         <ul className="space-y-1">
           {usuarios.map((u) => (
             <li key={u.nombre}>
@@ -30,7 +30,7 @@ export default function NetworkingList() {
               </div>
             </li>
           ))}
-        </ul>
+        </ul>*/}
       </div>
     </aside>
   );

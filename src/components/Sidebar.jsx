@@ -11,7 +11,7 @@ export default function Sidebar() {
   return (
     <aside>
       <div className="rounded-lg border bg-white p-3 shadow-sm">
-        <h3 className="px-2 pb-2 text-sm font-semibold text-gray-500">Mensajes</h3>
+        {/* Tu comentario va aquí <h3 className="px-2 pb-2 text-sm font-semibold text-gray-500">Mensajes</h3>
         <ul className="space-y-1">
           {mensajes.map((m) => (
             <li key={m.nombre}>
@@ -31,7 +31,7 @@ export default function Sidebar() {
               </button>
             </li>
           ))}
-        </ul>
+        </ul>*/}
       </div>
     </aside>
   );
