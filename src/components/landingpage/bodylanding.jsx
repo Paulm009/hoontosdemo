@@ -1,7 +1,7 @@
 // components/ProfessionalSynopsis.jsx
 import { useState } from 'react';
 import { CloudUpload, ChartLine, Download, Share2 } from 'lucide-react';
-
+import { Link } from "react-router-dom";
 const ProfessionalSynopsis = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [email, setEmail] = useState('');
@@ -26,6 +26,8 @@ const ProfessionalSynopsis = () => {
     // Lógica para generar la sinopsis
     console.log('Generando sinopsis...');
   };
+
+ 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-gray-100 py-8 px-4">
@@ -81,12 +83,12 @@ const ProfessionalSynopsis = () => {
               </div>
               
               {/* Generate Button */}
-              <button 
-                onClick={handleGenerate}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                Generate Synopsis
-              </button>
+              <Link 
+  to="/inicio"
+  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-center block"
+>
+  Generate Synopsis
+</Link>
             </div>
             
             {/* Stats */}

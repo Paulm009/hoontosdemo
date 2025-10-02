@@ -1,5 +1,5 @@
 import { Bell, User } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="w-full border-b border-[hsl(217.2,32.6%,17.5%)] px-6 py-3 flex justify-between items-center bg-[hsl(222.2,84%,4.9%)]">
@@ -10,7 +10,9 @@ export default function Header() {
           alt="ConectaPro Logo" 
           className="w-8 h-8 object-contain"
         />
-        <span className="font-bold text-lg">Twintro</span>
+        <Link to="/" className="font-bold text-lg">
+  Twintro
+</Link>
       </div>
 
       {/* Buscador */}

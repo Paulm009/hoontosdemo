@@ -27,9 +27,16 @@ export default function Badge() {
           </div>
 
           {/* Logo a la derecha */}
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 ml-4">
-            <span className="text-xl font-bold">∞</span>
-          </div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 ml-4 overflow-hidden">
+  <img 
+    src="./src/assets/paul.png" 
+    alt="Logo" 
+    className="h-full w-full object-cover" 
+  />
+</div>
+
+
+          
         </div>
       </div>
     </a>
